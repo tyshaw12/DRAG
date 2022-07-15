@@ -76,6 +76,8 @@ while run:
             if event.key == pygame.K_5:
                 yellow_cycle = True
                 draw_text("You wanted the yellow motorcycle? Y/N", medium_font, TEXT_COL, 220, 500)
+            if event.key == pygame.K_ESCAPE:
+                run = False
         pygame.display.update()      
         if event.type == pygame.QUIT:
             run = False
